@@ -1,0 +1,7 @@
+D:\locobuzz\library management system\obj\Debug\net6.0\library management system.csproj.AssemblyReference.cache
+D:\locobuzz\library management system\obj\Debug\net6.0\library management system.GeneratedMSBuildEditorConfig.editorconfig
+D:\locobuzz\library management system\obj\Debug\net6.0\library management system.AssemblyInfoInputs.cache
+D:\locobuzz\library management system\obj\Debug\net6.0\library management system.AssemblyInfo.cs
+D:\locobuzz\library management system\obj\Debug\net6.0\library management system.csproj.CoreCompileInputs.cache
+D:\locobuzz\library management system\obj\Debug\net6.0\library management system.MvcApplicationPartsAssemblyInfo.cs
+D:\locobuzz\library management system\obj\Debug\net6.0\library management system.MvcApplicationPartsAssemblyInfo.cache
