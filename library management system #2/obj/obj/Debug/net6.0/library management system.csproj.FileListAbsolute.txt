@@ -1,0 +1,89 @@
+D:\locobuzz\library management system\obj\Debug\net6.0\library management system.csproj.AssemblyReference.cache
+D:\locobuzz\library management system\obj\Debug\net6.0\library management system.GeneratedMSBuildEditorConfig.editorconfig
+D:\locobuzz\library management system\obj\Debug\net6.0\library management system.AssemblyInfoInputs.cache
+D:\locobuzz\library management system\obj\Debug\net6.0\library management system.AssemblyInfo.cs
+D:\locobuzz\library management system\obj\Debug\net6.0\library management system.csproj.CoreCompileInputs.cache
+D:\locobuzz\library management system\obj\Debug\net6.0\library management system.MvcApplicationPartsAssemblyInfo.cs
+D:\locobuzz\library management system\obj\Debug\net6.0\library management system.MvcApplicationPartsAssemblyInfo.cache
+D:\locobuzz\library management system\bin\Debug\net6.0\appsettings.Development.json
+D:\locobuzz\library management system\bin\Debug\net6.0\appsettings.json
+D:\locobuzz\library management system\bin\Debug\net6.0\library management system.exe
+D:\locobuzz\library management system\bin\Debug\net6.0\library management system.deps.json
+D:\locobuzz\library management system\bin\Debug\net6.0\library management system.runtimeconfig.json
+D:\locobuzz\library management system\bin\Debug\net6.0\library management system.dll
+D:\locobuzz\library management system\bin\Debug\net6.0\library management system.pdb
+D:\locobuzz\library management system\bin\Debug\net6.0\Azure.Core.dll
+D:\locobuzz\library management system\bin\Debug\net6.0\Azure.Identity.dll
+D:\locobuzz\library management system\bin\Debug\net6.0\EntityFramework.SqlServer.dll
+D:\locobuzz\library management system\bin\Debug\net6.0\EntityFramework.dll
+D:\locobuzz\library management system\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\locobuzz\library management system\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+D:\locobuzz\library management system\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+D:\locobuzz\library management system\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\locobuzz\library management system\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\locobuzz\library management system\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\locobuzz\library management system\bin\Debug\net6.0\Microsoft.Extensions.Caching.Abstractions.dll
+D:\locobuzz\library management system\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+D:\locobuzz\library management system\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\locobuzz\library management system\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+D:\locobuzz\library management system\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\locobuzz\library management system\bin\Debug\net6.0\Microsoft.Extensions.Logging.dll
+D:\locobuzz\library management system\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
+D:\locobuzz\library management system\bin\Debug\net6.0\Microsoft.Extensions.Options.dll
+D:\locobuzz\library management system\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll
+D:\locobuzz\library management system\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+D:\locobuzz\library management system\bin\Debug\net6.0\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\locobuzz\library management system\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
+D:\locobuzz\library management system\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\locobuzz\library management system\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+D:\locobuzz\library management system\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+D:\locobuzz\library management system\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\locobuzz\library management system\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+D:\locobuzz\library management system\bin\Debug\net6.0\Microsoft.OpenApi.dll
+D:\locobuzz\library management system\bin\Debug\net6.0\Microsoft.SqlServer.Server.dll
+D:\locobuzz\library management system\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\locobuzz\library management system\bin\Debug\net6.0\Newtonsoft.Json.dll
+D:\locobuzz\library management system\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\locobuzz\library management system\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\locobuzz\library management system\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\locobuzz\library management system\bin\Debug\net6.0\System.CodeDom.dll
+D:\locobuzz\library management system\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+D:\locobuzz\library management system\bin\Debug\net6.0\System.Data.SqlClient.dll
+D:\locobuzz\library management system\bin\Debug\net6.0\System.Drawing.Common.dll
+D:\locobuzz\library management system\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+D:\locobuzz\library management system\bin\Debug\net6.0\System.Memory.Data.dll
+D:\locobuzz\library management system\bin\Debug\net6.0\System.Runtime.Caching.dll
+D:\locobuzz\library management system\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+D:\locobuzz\library management system\bin\Debug\net6.0\System.Security.Permissions.dll
+D:\locobuzz\library management system\bin\Debug\net6.0\System.Windows.Extensions.dll
+D:\locobuzz\library management system\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\locobuzz\library management system\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\locobuzz\library management system\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\locobuzz\library management system\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\locobuzz\library management system\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\locobuzz\library management system\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\locobuzz\library management system\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+D:\locobuzz\library management system\bin\Debug\net6.0\runtimes\win-arm64\native\sni.dll
+D:\locobuzz\library management system\bin\Debug\net6.0\runtimes\win-x64\native\sni.dll
+D:\locobuzz\library management system\bin\Debug\net6.0\runtimes\win-x86\native\sni.dll
+D:\locobuzz\library management system\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\locobuzz\library management system\bin\Debug\net6.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\locobuzz\library management system\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\locobuzz\library management system\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\locobuzz\library management system\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+D:\locobuzz\library management system\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+D:\locobuzz\library management system\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+D:\locobuzz\library management system\obj\Debug\net6.0\staticwebassets\msbuild.library management system.Microsoft.AspNetCore.StaticWebAssets.props
+D:\locobuzz\library management system\obj\Debug\net6.0\staticwebassets\msbuild.build.library management system.props
+D:\locobuzz\library management system\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.library management system.props
+D:\locobuzz\library management system\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.library management system.props
+D:\locobuzz\library management system\obj\Debug\net6.0\staticwebassets.pack.json
+D:\locobuzz\library management system\obj\Debug\net6.0\staticwebassets.build.json
+D:\locobuzz\library management system\obj\Debug\net6.0\staticwebassets.development.json
+D:\locobuzz\library management system\obj\Debug\net6.0\scopedcss\bundle\library management system.styles.css
+D:\locobuzz\library management system\obj\Debug\net6.0\library management system.csproj.CopyComplete
+D:\locobuzz\library management system\obj\Debug\net6.0\library management system.dll
+D:\locobuzz\library management system\obj\Debug\net6.0\refint\library management system.dll
+D:\locobuzz\library management system\obj\Debug\net6.0\library management system.pdb
+D:\locobuzz\library management system\obj\Debug\net6.0\library management system.genruntimeconfig.cache
+D:\locobuzz\library management system\obj\Debug\net6.0\ref\library management system.dll
