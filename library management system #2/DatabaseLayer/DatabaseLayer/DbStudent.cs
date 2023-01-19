@@ -11,8 +11,8 @@ namespace library_management_system.DatabaseLayer
 {
     public class DbStudent
     {
+        private string connectionString = "Data Source=\"(localdb)\\Library system\";Initial Catalog=\"Library Management\";Integrated Security=True";
         public static int RentalId = 1;
-        string connectionString = "";
 
         [HttpGet]
         public string GetAllBooksStudentDb()
@@ -26,7 +26,7 @@ namespace library_management_system.DatabaseLayer
                     {
                         con.Open();
                         cmd.ExecuteNonQuery();
-                        SqlDataAdapter da = new SqlDataAdapter();
+                        SqlDataAdapter da = new SqlDataAdapter(cmd);
                         DataTable dt = new DataTable();
                         da.Fill(dt);
                         con.Close();
@@ -52,13 +52,15 @@ namespace library_management_system.DatabaseLayer
                 {
                     using (SqlCommand cmd = new SqlCommand(sqlQuery, con))
                     {
-                        cmd.CommandType = CommandType.StoredProcedure;
-                        if (Stream != "") cmd.Parameters.AddWithValue("@stream", Stream);
-                        if (Medium != "") cmd.Parameters.AddWithValue("@medium", Medium);
-                        if (BookTitle != "") cmd.Parameters.AddWithValue("@bookTitle", BookTitle);
+                        //if (Stream != "") 
+                            cmd.Parameters.AddWithValue("@stream", Stream);
+                        //if (Medium != "")
+                            cmd.Parameters.AddWithValue("@medium", Medium);
+                        //if (BookTitle != "")
+                            cmd.Parameters.AddWithValue("@bookTitle", BookTitle);
                         con.Open();
                         cmd.ExecuteNonQuery();
-                        SqlDataAdapter da = new SqlDataAdapter();
+                        SqlDataAdapter da = new SqlDataAdapter(cmd);
                         DataTable dt = new DataTable();
                         da.Fill(dt);
                         con.Close();
@@ -77,20 +79,21 @@ namespace library_management_system.DatabaseLayer
         [HttpGet]
         DataTable GetBookDetails(string bookId)
         {
-            DataTable dt = new DataTable();
-            using (SqlConnection con = new SqlConnection(connectionString))
-            {
-                using (SqlCommand cmd = new SqlCommand("SELECT * FROM BookDetail WHERE BookId = @bookId", con))
+           
+                DataTable dt = new DataTable();
+                using (SqlConnection con = new SqlConnection(connectionString))
                 {
-                    cmd.Parameters.AddWithValue("@bookId", bookId);
-                    con.Open();
-                    cmd.ExecuteNonQuery();
-                    SqlDataAdapter da = new SqlDataAdapter();
-                    da.Fill(dt);
-                    con.Close();
+                    using (SqlCommand cmd = new SqlCommand("SELECT * FROM BookDetail WHERE BookId = @bookId", con))
+                    {
+                        cmd.Parameters.AddWithValue("@bookId", bookId);
+                        con.Open();
+                        cmd.ExecuteNonQuery();
+                        SqlDataAdapter da = new SqlDataAdapter(cmd);
+                        da.Fill(dt);
+                        con.Close();
+                    }
                 }
-            }
-            return dt;
+                return dt;
         }
 
         [HttpGet]
@@ -105,7 +108,7 @@ namespace library_management_system.DatabaseLayer
                     cmd.Parameters.AddWithValue("@rentalId", rentalId);
                     con.Open();
                     cmd.ExecuteNonQuery();
-                    SqlDataAdapter da = new SqlDataAdapter();
+                    SqlDataAdapter da = new SqlDataAdapter(cmd);
                     da.Fill(dt);
                     con.Close();
                 }
@@ -126,7 +129,7 @@ namespace library_management_system.DatabaseLayer
                 int RentDays = (int)time.TotalDays;
                 string sqlQuery = "INSERT INTO BookDetail (RentalId,BookId,StudentId,IssueDate,ReturnDate,RentTotal,HasReturned,Penalty)    VALUES (@RentalId,@BookId,@StudentId,@IssueDate,@ReturnDate,@RentTotal,@HasReturned,@Penalty)";
                 
-                using (SqlConnection con = new SqlConnection())
+                using (SqlConnection con = new SqlConnection(connectionString))
                 {
                     using (SqlCommand cmd = new SqlCommand(sqlQuery, con))
                     {
@@ -160,11 +163,9 @@ namespace library_management_system.DatabaseLayer
             int quantity = 0;
             if (dt.Rows.Count == 0 || (int)dt.Rows[0][5] == 0) return "Book is Not-Available";
             string sqlQuery = "SELECT Quantity FROM BookDetail WHERE BookId = @bookId";
-
+            quantity = (int)dt.Rows[0][5];
             using (SqlConnection con = new SqlConnection(connectionString))
             {
-                
-                
                 sqlQuery = String.Format("UPDATE BookDetail SET Quantity = {0} WHERE BookId = @bookId",quantity - 1);
                 using (SqlCommand cmd = new SqlCommand(sqlQuery, con))
                 {
@@ -178,7 +179,7 @@ namespace library_management_system.DatabaseLayer
                         StudentId = StudentId,
                         IssueDate = DateTime.Now,
                         ReturnDate = DateTime.Now,
-                        RentPrice = (float)dt.Rows[0][5]
+                        RentPrice = float.Parse((dt.Rows[0][5]).ToString(),System.Globalization.CultureInfo.InvariantCulture)
                     };
                     LogTableEntryDb(RentalId, issueBookDetails);
                     RentalId = RentalId + 1;
@@ -215,7 +216,7 @@ namespace library_management_system.DatabaseLayer
                         cmd.Parameters.AddWithValue("@RentalId", BookRentalId);
                         con.Open();
                         cmd.ExecuteNonQuery();
-                        SqlDataAdapter da = new SqlDataAdapter();
+                        SqlDataAdapter da = new SqlDataAdapter(cmd);
                         DataTable dt = new DataTable();
                         da.Fill(dt);
                         con.Close();
