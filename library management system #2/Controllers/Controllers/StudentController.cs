@@ -21,7 +21,7 @@ namespace library_management_system.Controllers
         LogicLibrarian librarian= new LogicLibrarian();
 
         [HttpGet]
-        public async Task<string> GetBooks()
+        public string GetBooks()
         {
             try
             {

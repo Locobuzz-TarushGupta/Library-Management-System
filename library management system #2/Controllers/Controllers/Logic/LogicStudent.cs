@@ -29,9 +29,9 @@ namespace library_management_system.Controllers.Logic
         [HttpPost, HttpPut]
         public async Task<string> IssueBookLogic(string jsonFile) 
         {
-            IssueBookModel data = JsonConvert.DeserializeObject<IssueBookModel>(jsonFile);
-            string bookID = data.BookId;
-            string studentID = "";
+            dynamic data = JsonConvert.DeserializeObject<dynamic>(jsonFile);
+            string bookID = data["BookId"];
+            string studentID = data["StudentId"];
             string result = student.IssueBookDb(bookID, studentID);
             if (result != "Book is Not-Available")
             {
