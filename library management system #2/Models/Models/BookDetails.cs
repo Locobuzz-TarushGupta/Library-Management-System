@@ -6,6 +6,7 @@
         public string? BookTitle { get; set; }
         public string? BookDescription { get; set; }
         public string? Author { get; set; }
+        public string? Medium { get; set; }
         public string? Stream { get; set; }
         public int Quantity { get; set; }
         public float RentPrice { get; set; }
