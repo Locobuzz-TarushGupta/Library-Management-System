@@ -8,11 +8,13 @@ using System.Text.Json.Serialization;
 using System.Text.Json;
 using library_management_system.Controllers.Logic;
 using Microsoft.Extensions.Configuration;
+using Microsoft.AspNetCore.Authorization;
 
 namespace library_management_system.Controllers
 {
     [Route("api/[controller]/[action]")]
     [ApiController]
+    [Authorize(Roles = "Librarian")]
     public class BookController: ControllerBase
     {
         

@@ -1,10 +1,12 @@
 ﻿using library_management_system.Controllers.Logic;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace library_management_system.Controllers
 {
     [Route("api/[controller]/[action]")]
     [ApiController]
+    [Authorize(Roles = "Student")]
     public class StudentController
     {
         
@@ -21,6 +23,7 @@ namespace library_management_system.Controllers
         LogicLibrarian librarian= new LogicLibrarian();
 
         [HttpGet]
+        [AllowAnonymous]
         public string GetBooks()
         {
             try
